@@ -30,6 +30,7 @@ namespace ShareIt
         {
             this.InitializeComponent();
             RegisterForSharing();
+            RegisterForSettings();
             resources = new ResourceLoader();
         }
 
@@ -56,6 +57,22 @@ namespace ShareIt
         /// <param name="pageState">An empty dictionary to be populated with serializable state.</param>
         protected override void SaveState(Dictionary<String, Object> pageState)
         {
+        }
+
+        private void RegisterForSettings()
+        {
+            Windows.UI.ApplicationSettings.SettingsPane.GetForCurrentView().CommandsRequested += (s,e) => {
+                e.Request.ApplicationCommands.Add(new Windows.UI.ApplicationSettings.SettingsCommand(
+                    "privacy policies", 
+                    resources.GetString("PrivacyPolicySettings"),
+                    new UICommandInvokedHandler(async (cmd) => 
+                        {
+                            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://sites.google.com/site/shareitwindows8/"));                            
+                        })
+                        ));
+            };
+
+            
         }
 
         #region Share

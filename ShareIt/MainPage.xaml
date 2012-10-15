@@ -22,6 +22,12 @@
         * Row 1 contains the rest of the page layout
     -->
     <Grid Style="{StaticResource LayoutRootStyle}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition />
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint=".3,1">
                 <GradientStop Color="#FF0067BD" Offset="0" />

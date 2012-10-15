@@ -139,4 +139,7 @@ Check your url and try again.</value>
   <data name="LabelShareUri.Text" xml:space="preserve">
     <value>URL you want to share</value>
   </data>
+  <data name="PrivacyPolicySettings" xml:space="preserve">
+    <value>Privacy Policies</value>
+  </data>
 </root>

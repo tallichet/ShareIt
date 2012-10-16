@@ -15,9 +15,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ShareIt.App">
-      <VisualElements DisplayName="ShareIt" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="ShareIt" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="Assets\SplashScreen.png" />
+      <VisualElements DisplayName="ShareIt" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="ShareIt allows you to share with and from desktop app using the clipboard or your keyboard." ForegroundText="light" BackgroundColor="#2b6dff" ToastCapable="false">
+        <DefaultTile ShowName="allLogos" ShortName="ShareIt" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#2b6dff" />
       </VisualElements>
       <Extensions>
         <Extension Category="windows.shareTarget">

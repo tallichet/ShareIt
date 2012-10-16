@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="544b6597-8645-4886-97ba-0038e3200093" Publisher="CN=Cedric" Version="1.0.0.0" />
+  <Identity Name="37507CedricTallichet.ShareIt" Publisher="CN=AD495E24-07FF-401C-AE86-F19FEB93B46C" Version="1.0.0.0" />
   <Properties>
     <DisplayName>ShareIt</DisplayName>
-    <PublisherDisplayName>Cedric</PublisherDisplayName>
+    <PublisherDisplayName>Cedric Tallichet</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>

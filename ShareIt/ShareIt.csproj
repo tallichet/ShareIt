@@ -12,7 +12,9 @@
     <DefaultLanguage>en</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>ShareIt_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>ShareIt_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>55F8C4FB62BD7450E8FC57984177A982842D9DF4</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -125,6 +127,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <PRIResource Include="en\Resources.resw" />
+    <None Include="ShareIt_StoreKey.pfx" />
     <None Include="ShareIt_TemporaryKey.pfx" />
     <PRIResource Include="fr\Resources.resw" />
   </ItemGroup>
@@ -134,6 +137,7 @@
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Common\ReadMe.txt" />
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
